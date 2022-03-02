@@ -1,0 +1,55 @@
+/* CSS BASIC RESET */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* DEFINE VARIABLES */
+:root {
+  --color-primary-dark-cyan: hsl(185, 75%, 39%);
+  --color-primary-dark-sat-blue: hsl(229, 23%, 23%);
+  --color-primary-dark-gray-blue: hsl(227, 10%, 46%);
+
+  --color-neutral-dark-gray: hsl(0, 0%, 59%);
+
+  --color-secondary-link: hsl(228, 45%, 44%);
+
+  /* TYPOGRAPHY */
+  --font-size-base: 18px;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+html {
+  font-size: var(--font-size-base);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* MAIN */
+main {
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOOTER */
+footer {
+  border: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 0.611rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-secondary-link);
+}
